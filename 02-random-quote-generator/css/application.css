@@ -1,0 +1,129 @@
+html {
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: #fff 0 1px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    margin-top: -280px;
+    margin-left: -175px;
+    font-weight: 300;
+    font-size: 46px;
+}
+
+
+.wrapper {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 680px;
+    padding: 40px;
+    margin: -190px 0 0 -340px;
+}
+
+.quote-block {
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.button-wrap {
+    overflow: hidden;
+}
+
+
+.avatar {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #ffffff;
+    -webkit-box-shadow: 1px 1px 12px 2px #cccccc;
+    -moz-box-shadow: 1px 1px 12px 2px #cccccc;
+    box-shadow: 1px 1px 12px 2px #cccccc;
+}
+
+.quote {
+    float: right;
+    width: 460px;
+    text-shadow: 1px 0 1px #cccccc;
+}
+
+.quote p {
+    padding: 10px 20px 0 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.quote cite {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    padding-left: 40px;
+}
+
+.quote i {
+    font-size: 26px;
+}
+
+.quote .fa-quote-right {
+    float: right;
+}
+
+.twitter-button {
+    float: left;
+}
+
+.twitter-button a,
+.quote-button {
+    display: inline-block;
+    background-color: #666666;
+}
+
+.twitter-button a{
+    padding: 12px 14px;
+}
+
+.twitter-button .fa {
+    display: inline-block;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+
+.quote-button {
+    float: right;
+    color: #ffffff;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 14px;
+}
+
+.quote-button:focus,
+.quote-button:hover,
+.quote-button:active,
+.twitter-button a:focus,
+.twitter-button a:hover,
+.twitter-button a:active{
+    background-color: #444444;
+    cursor: pointer;
+}
+
+

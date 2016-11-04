@@ -1,0 +1,172 @@
+html, body {
+    height: 100%;
+}
+
+body * {
+    font-family: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
+    color: #666666;
+}
+
+.container-fluid {
+    background-color: #9acfea;
+    height: 100%;
+    overflow: auto;
+}
+
+.content {
+    margin: 80px auto;
+    float: none;
+    min-width: 600px;
+    max-width: 760px;
+    padding: 40px;
+    background: #ffffff;
+}
+
+.page-title {
+    text-align: center;
+}
+
+#streams {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.input-group {
+    width: 100%;
+}
+
+#search-field {
+    margin-bottom: 40px;
+}
+
+.input-group .form-control:last-child {
+    border-radius: 28px;
+    padding-left: 46px;
+}
+
+.input-group .fa-search {
+    position: relative;
+    top: 34px;
+    z-index: 10;
+    left: 16px;
+    font-size: 18px;
+}
+
+.stream {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 68px;
+}
+
+.stream a {
+    padding: 8px;
+    display: block;
+}
+
+.stream.online:hover,
+.stream.offline:hover {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.stream.online .status {
+    color: red;
+}
+
+.stream.closed:hover a {
+    cursor: default;
+}
+
+.stream img{
+    width: 80px;
+}
+
+.stream .outer-wrap {
+    width: 82%;
+    left: 18%;
+}
+
+.stream .outer-wrap .wrap {
+    width: 80%;
+}
+
+.stream .outer-wrap .status {
+    width: 15%;
+    right: 0;
+    font-size: 18px;
+}
+
+.stream h3,
+.stream p {
+    margin: 0;
+}
+
+
+
+
+
+/* Fixes */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .content {
+
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* Helper classes */
+
+.pull-left {
+    float: left !important;
+}
+.pull-right {
+    float: right !important;
+}
+
+.show {
+    display: block !important;
+}
+.hidden {
+    display: none !important;
+}
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* ie 6/7 */
+}
+
+.center-parent {
+    position: relative;
+}
+
+.center-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

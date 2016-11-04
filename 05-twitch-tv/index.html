@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- remove for code pen-->
+<html lang="en">
+<!--suppress JSUnresolvedLibraryURL -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Free Code Camp Twitch TV App</title>
+
+    <!-- font awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+    <!-- Material Design Lite -->
+    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">-->
+    <!-- Material Design icon font -->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+
+    <!-- Styles -->
+    <!--<link href="css/reset.css" rel="stylesheet">-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/application.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--
+        References
+        [1] http://forum.freecodecamp.com/t/use-the-twitchtv-json-api/19541
+        [2] https://github.com/justintv/Twitch-API/blob/master/v3_resources/streams.md#get-streamschannel
+        [3] https://discuss.dev.twitch.tv/t/beginner-basic-twitch-website-integration/2681/6
+        [4] https://discuss.dev.twitch.tv/t/check-whether-channel-is-online-or-not-via-js-solution-found/2019/5
+        [5] http://justintv.github.io/twitch-js-sdk/docs/twitch.html
+        [6] http://codereview.stackexchange.com/questions/134352/calling-twitch-api-and-displaying-online-offline-users-of-a-channel
+        [7] https://github.com/justintv/Twitch-API#json-p
+        [8] https://wind-bow.hyperdev.space/ (api replacement for project)
+        [9] https://css-tricks.com/centering-css-complete-guide/ (Center elements using CSS)
+        [10] http://codepen.io/zoite/full/GJKRxZ
+        [11] http://www.w3schools.com/howto/howto_js_filter_lists.asp (filter list items)
+
+    -->
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="content">
+
+            <h1 class="page-title">Twitch TV</h1>
+
+            <div id="search-field">
+                <div class="input-group">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input id="input-field" type="text" class="form-control input-lg" placeholder="Filter list" />
+                </div>
+            </div>
+
+            <ul id="streams">
+
+                <!--<li class="stream clearfix center-parent">-->
+                    <!--<a href="#" class="clearfix">-->
+                        <!--<div class="outer-wrap pull-right clearfix center-child">-->
+                            <!--<div class="wrap pull-left">-->
+                                <!--<h3 class="user-name">Bacon Ipsum</h3>-->
+                                <!--<p class="description">Filet mignon tenderloin drumstick fatback pork swine, biltong kevin shoulder.</p>-->
+                            <!--</div>-->
+                            <!--<div class="status pull-right center-child"><span class="online">LIVE</span><span class="offline hidden">Offline</span></div>-->
+                        <!--</div>-->
+                        <!--<img class="avatar img-circle img-thumbnail img-responsive pull-left" src="imgs/avatar1.jpg">-->
+                    <!--</a>-->
+                <!--</li>-->
+
+
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="credit"></div>
+
+    <!-- Google's Material Design components for web -->
+    <!--<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+
+        // add onkeyup="filterListItems()" property to #input-field
+
+//        function filterListItems() {
+//            var input = document.getElementById("input-field");
+//            var list = document.getElementById("streams");
+//            var listItems = list.getElementsByTagName("li");
+//
+//            // fetch the entered text
+//            var text = input.value.toLowerCase();
+//
+//            // iterate through listItems' h3 elements, hiding those that do not match
+//            for (var i = 0; i < listItems.length; i++) {
+//                var header = listItems[i].getElementsByTagName("h3")[0];
+//                var value =  header.innerHTML.toLowerCase().indexOf(text);
+//                if (value >= -1) {
+//                    // found match
+//                    listItems[i].style.display = "";
+//                } else {
+//                    // no match, hide item
+//                    listItems[i].style.display = "none";
+//                }
+//            }
+//        }
+
+    </script>
+
+</body>
+</html>

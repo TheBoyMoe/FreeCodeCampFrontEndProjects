@@ -1,0 +1,212 @@
+html {
+
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+body p {
+    line-height: 1;
+}
+
+.container {
+    z-index: 2;
+    color: #AAAAAA;
+    background-color: currentColor;
+    width: 360px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -260px 0 0 -180px;
+    -webkit-box-shadow: 1px 1px 12px 2px #cccccc;
+    -moz-box-shadow: 1px 1px 12px 2px #cccccc;
+    box-shadow: 1px 1px 12px 2px #cccccc;
+}
+
+p.description,
+p.current-location {
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+p.description {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+}
+
+.content-wrap {
+    margin-bottom: 20px;
+}
+
+.temp {
+
+    float: left;
+    width: 200px;
+}
+
+.switch-wrap {
+    float: right;
+    width: 160px;
+}
+
+.switch-wrap .high-low {
+    margin-right: 24px;
+    float: right;
+}
+
+.switch-wrap .high-low p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.temp-result {
+    font-size: 62px;
+    float: left;
+    margin-left: 18px;
+}
+
+.temp .units {
+    float: left;
+    position: relative;
+    margin-top: -2px;
+}
+
+.temp .units svg {
+    width: 24px;
+    height: 24px;
+}
+
+.temp .units svg path {
+    fill: #3f51b5 !important;
+}
+
+.values {
+    margin-bottom: 20px;
+}
+
+.values .results {
+    text-align: center;
+    width: 90px;
+    float: left;
+    padding: 6px;
+}
+
+.content .values .results p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.values .results .results-wrap {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.results p.units {
+    padding-bottom: 14px;
+    font-size: 12px;
+}
+
+.values .reading {
+    font-size: 26px;
+    padding: 14px 0;
+}
+
+.values .heading {
+    font-size: 13px;
+
+}
+
+.values .wind-direction {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.material-ui-switch .units svg {
+    width: 20px;
+    height: 20px;
+}
+
+.material-ui-switch {
+    float: right;
+    margin: 0 18px 12px 0;
+}
+
+.material-ui-switch .units {
+    display: inline-block;
+    float: left;
+}
+
+.material-ui-switch .mdl-switch {
+    width: 40px;
+    float: left;
+}
+
+.material-ui-switch .units svg path {
+    fill: #ffffff !important;
+}
+
+.icon.sun-shower {
+    left: 160px;
+}
+
+.icon.thunder-storm,
+.icon.cloudy,
+.icon.flurries,
+.icon.rainy {
+    left: 180px;
+    top: -16px;
+}
+.icon.sunny {
+    left: 180px;
+}
+
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.credit {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.credit p {
+    color: #888888;
+    padding: 0;
+    text-align: center;
+}
+
+/* Fixes */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* ie 6/7 */
+}

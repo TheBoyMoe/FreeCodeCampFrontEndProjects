@@ -1,0 +1,167 @@
+html, body {
+    height: 100%;
+}
+
+body * {
+    font-family: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
+    color: #666666;
+}
+
+
+.page-title {
+    text-align: center;
+}
+
+.container-fluid {
+    height: 100%;
+    overflow: auto;
+}
+
+.content {
+    max-width: 920px;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    margin: 40px 0;
+}
+
+.form-control {
+    background-color: transparent;
+}
+
+#search-field,
+#search-results li.result {
+    padding: 3px;
+    border: solid 2px #E4E4E4;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+
+
+#search-field input{
+    border: 0;
+    box-shadow: none;
+}
+
+#search-field button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#search-field button:hover,
+#search-field button a:hover,
+#search-field i.result:hover {
+    color: #000000;
+}
+
+#search-field button a:hover {
+    text-decoration: none;
+}
+
+#search-results {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#search-results li.result {
+    margin-bottom: 20px;
+}
+
+#search-results li.result a:focus,
+#search-results li.result a:hover,
+#search-results li.result a:active {
+    display: inline-block;
+    background-color: #f6f6f6;
+    text-decoration: none;
+}
+
+
+#search-results h3,
+#search-results p {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#search-results h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
+    padding-top: 14px;
+}
+
+#search-results p {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: 14px;
+}
+
+#search-results .load-more {
+    margin: 40px 0;
+}
+
+#search-results .load-more p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 14px 0;
+}
+
+.no-match {
+    padding-left: 18px;
+}
+
+.no-match li {
+    padding-bottom: 8px;
+}
+
+.no-match .query {
+    display: inline-block;
+    color: #1b6d85;
+}
+
+.error h4 {
+    text-align: center;
+}
+
+/* Fixes */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* ie 6/7 */
+}
