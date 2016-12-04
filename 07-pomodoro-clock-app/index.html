@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Clock App</title>
+
+    <!-- font awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono" rel="stylesheet">
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!--
+        References:
+        [1] http://codepen.io/zoite/pen/RPbGxZ
+        [2] http://codepen.io/teckliew/pen/LGeWmp
+        [3] http://codepen.io/Khatybov/pen/KdBbdo *
+        [4] http://codepen.io/eddyerburgh/pen/yOjdqo
+        [5] http://codepen.io/owenfromcanada/pen/mPdJKo (drag circle stroke)
+        [6] https://www.developphp.com/video/JavaScript/Circular-Progress-Loader-Canvas-JavaScript-Programming-Tutorial (circular progress bar)
+        [7] https://jsfiddle.net/Aapn8/3410/ (circular progress bar)
+        [8] https://jsfiddle.net/oskar/Aapn8/ (circular progress bar)
+        [9] http://progressbarjs.readthedocs.io/en/latest/ (progress bar lib - line/circular/triangular/custom)
+        [10] https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+        [11] http://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
+        [12] https://appendto.com/2016/10/comparing-javascript-jquery-build-a-pomodoro-timer/
+        [13] http://codepen.io/rajdgreat007/pen/ZpZWbw
+        [14] http://stackoverflow.com/questions/1933969/sound-effects-in-javascript-html5
+    -->
+
+    <!--
+        Online sounds:
+        https://s3.amazonaws.com/freecodecamp/simonSound1.mp3,
+        https://s3.amazonaws.com/freecodecamp/simonSound2.mp3,
+        https://s3.amazonaws.com/freecodecamp/simonSound3.mp3,
+        https://s3.amazonaws.com/freecodecamp/simonSound4.mp3.
+    -->
+
+
+
+    <!--
+        Sound effects published under a creative commons 3.0 license
+        Foghorn by Daniel Simon, & Ship bell by Mike Koenig
+    -->
+
+</head>
+<body>
+
+    <div id="app">
+        <div class="wrap">
+            <div id="header" class="clearfix">
+                <h1>Pomodoro Clock</h1>
+            </div>
+
+            <div id="panel" class="clearfix">
+                <div class="controller pull-left">
+                    <div class="wrap">
+                        <div class="title">SESSION LENGTH</div>
+                        <div class="spinner-wrap">
+                            <button data-val="plus-session" class="spinner">&plus;</button>
+                            <span id="session-display" class="value">25</span>
+                            <button data-val="minus-session" class="spinner">&minus;</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="controller pull-left">
+                    <div class="wrap">
+                        <div class="title">BREAK LENGTH</div>
+                        <div class="spinner-wrap">
+                            <button data-val="plus-break" class="spinner">&plus;</button>
+                            <span id="break-display" class="value">05</span>
+                            <button data-val="minus-break" class="spinner">&minus;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="timer">
+                <canvas id="default-bar" width="200" height="200"></canvas>
+                <canvas id="progress-bar" width="200" height="200"></canvas>
+                <div id="countdown-timer">25&#58;00</div>
+                <p id="break">Enjoy your break!</p>
+            </div>
+
+            <div id="start">START</div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
