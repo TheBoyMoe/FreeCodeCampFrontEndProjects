@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe</title>
+
+    <!-- font awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!--
+        References
+        [1] http://www.javascriptkit.com/script/script2/tactoe.shtml
+        [2] http://codereview.stackexchange.com/questions/60871/tic-tac-toe-in-plain-javascript
+        [3] https://www.youtube.com/playlist?list=PLJnkyVAO-LM6IgtfN83wQ-dj5Oj1mNETN (6 video series ~45min)
+        [4] https://medium.com/front-end-hacking/tic-tac-toe-javascript-game-b0cd6e98edd9#.7mrlzlvfr
+        [4] http://jsfiddle.net/nishacodes/2Jvtu/
+        [5] https://wiki.selfhtml.org/wiki/JavaScript/Tutorials/TicTacToe (code + explanation)
+        [6] http://www.ntu.edu.sg/home/ehchua/programming/java/JavaGame_TicTacToe.html (Java version - code and explanation)
+        [7] https://codepen.io/ziga-miklic/pen/Fagmh (CSS, no logic)
+        [8] https://codepen.io/erkand-imeri/pen/xVYPmK
+        [9] https://codepen.io/MutantSpore/pen/jWWYLo (jQuery)
+        [10] https://codepen.io/Ali-Elsbaee/pen/MKNweo (jQuery - advanced AI)
+        [11] https://codepen.io/thepeted/pen/qOJVyK (jQuery)
+        [12] http://www.codexworld.com/simple-modal-popup-javascript-css/
+        [13] http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/
+        [14] http://tympanus.net/Development/ModalWindowEffects/
+        [15] https://www.youtube.com/playlist?list=PLDu4C7CHISoKbi-do2VKUfS6cv36C57y4 (HTML5 games with jQuery)
+                https://github.com/maxwihlborg/youtube-tutorials (game repos)
+        [16] https://www.youtube.com/playlist?list=PLHdCowjFIBmJkF-cRZmRiVFOKjPyOhxvD (HTML/CSS/jQuery 2-parts)
+        [17] https://mostafa-samir.github.io/Tic-Tac-Toe-AI/ (building the AI)
+                https://github.com/Mostafa-Samir/Tic-Tac-Toe-AI
+        [18] https://codepen.io/PiotrBerebecki/pen/ZOARdN?editors=0010
+        [19] https://blog.vivekpanyam.com/how-to-build-an-ai-that-wins-the-basics-of-minimax-search/
+                https://jsfiddle.net/xb9mr7bn/9/?utm_source=website&utm_medium=embed&utm_campaign=xb9mr7bn
+        [20] http://www.ntu.edu.sg/home/ehchua/programming/java/JavaGame_TicTacToe.html
+        [21] http://www.javascriptkit.com/script/script2/tactoe.shtml (AI script - choices hardcoded)
+        [22] https://github.com/DaJoker29/tic-tac-toe
+        [23] https://github.com/aglemann/tic-tac-toe
+        [24] http://jsfiddle.net/nishacodes/2Jvtu/ (hardcoded ai)
+        [25] http://chet-weger.herokuapp.com/play_ttt/
+        [26] http://richard.to/programming/ai-for-owari-part-2.html
+        [27] http://neverstopbuilding.com/minimax
+                https://github.com/jasonrobertfox/tictactoe
+        [28] http://jsfiddle.net/nishacodes/2Jvtu/ (vanila JS - choices hardcoded)
+        [29] https://www.khanacademy.org/computer-programming/tic-tack-toe-with-ai/1106996825 (hardcoded AI)
+        [30] https://github.com/Rafase282/My-FreeCodeCamp-Code/wiki/Zipline-Build-a-Tic-Tac-Toe-Game
+    -->
+
+</head>
+<body>
+
+    <div id="app">
+
+        <div id="top-modal" class="modal top">
+            <div class="modal-content">
+                <p class="message">CHOOSE</p>
+                <div class="action">
+                    <i data-val="x" class="fa fa-joomla mark" aria-hidden="true"></i>
+                    <i data-val="o" class="fa fa-meetup mark" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom-modal" class="modal bottom">
+            <div class="modal-content">
+                <p class="message"><span id="message-one"></span><span id="message-two"></span></p>
+                <p id="play" class="action">PLAY AGAIN?</p>
+            </div>
+        </div>
+
+
+        <div id="board">
+            <table id="grid">
+                <tr class="row clearfix">
+                    <td class="zero circle"><i class="fa" aria-hidden="true"></i></td>
+                    <td class="one circle"><i class="fa" aria-hidden="true"></i></td>
+                    <td class="two circle"><i class="fa" aria-hidden="true"></i></td>
+                </tr>
+                <tr class="row clearfix">
+                    <td class="three circle"><i class="fa" aria-hidden="true"></i></td>
+                    <td class="four circle"><i class="fa" aria-hidden="true"></i></td>
+                    <td class="five circle"><i class="fa" aria-hidden="true"></i></td>
+                </tr>
+                <tr class="row clearfix">
+                    <td class="six circle"><i class="fa" aria-hidden="true"></i></td>
+                    <td class="seven circle"><i class="fa" aria-hidden="true"></i></td>
+                    <td class="eight circle"><i class="fa" aria-hidden="true"></i></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="overlay"></div>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
