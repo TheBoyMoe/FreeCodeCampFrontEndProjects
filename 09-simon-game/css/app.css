@@ -1,0 +1,180 @@
+/*
+    Colour Palette
+    background:
+    circles
+    joomla:
+    drupal:
+ */
+
+
+body * {
+    font-family: 'Audiowide', cursive, sans-serif;
+    color: #666666;
+}
+
+
+body {
+
+    background-color: #FEFEFE;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#app,
+#control-panel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 120px;
+}
+
+
+#app {
+    height: 360px;
+    width: 480px;
+    margin: -180px 0 0 -240px;
+    background-color: #333333;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 16px 24px 0 rgba(0, 0, 0, 0.2);
+}
+
+#control-panel {
+    height: 140px;
+    width: 200px;
+    margin: -70px 0 0 -100px;
+    text-align: center;
+    background-color: #FEFEFE;
+    border: 4px solid #333333;
+}
+
+#control-panel h1 {
+    margin: 14px 0 10px;
+    font-size: 30px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    width: 100%;
+}
+
+#display {
+    height: 40px;
+    line-height: 40px;
+    width: 50%;
+    margin: 0 auto 10px;
+    background: #333333;
+    color: #d70905;
+    font-size: 22px;
+
+}
+
+#buttons i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #333333;
+}
+
+button {
+    padding: 4px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* color panels */
+.panel {
+    width: 210px;
+    height: 150px;
+    float: left;
+}
+
+#green.panel {
+    background-color: #007d00;
+    border-top-left-radius: 100px;
+    margin: 20px 10px 10px 20px;
+}
+
+#red.panel {
+    background-color: #e10000;
+    border-top-right-radius: 100px;
+    margin: 20px 20px 10px 10px;
+}
+
+#blue.panel {
+    background-color: #0000e1;
+    border-bottom-right-radius: 100px;
+    margin: 10px 20px 20px 10px;
+}
+
+#yellow.panel {
+    background-color: #e1e100;
+    border-bottom-left-radius: 100px;
+    margin: 10px 10px 20px 20px;
+}
+
+
+/*#green.panel:hover {*/
+    /*background-color: #009b00;*/
+/*}*/
+
+/*#red.panel:hover {*/
+    /*background-color: #ff0000;*/
+/*}*/
+
+/*#blue.panel:hover {*/
+    /*background-color: #0000ff;*/
+/*}*/
+
+/*#yellow.panel:hover {*/
+    /*background-color: #ffff00;*/
+/*}*/
+
+
+
+/* Helper classes */
+
+.pull-left {
+    float: left !important;
+}
+.pull-right {
+    float: right !important;
+}
+
+.show {
+    display: block !important;
+}
+.hidden {
+    display: none !important;
+}
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* ie 6/7 */
+}
+.center-parent {
+    position: relative;
+}
+
+.center-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simon</title>
+
+    <!-- font awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--google font -->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!--
+        References
+        [1] https://codeplanet.io/building-simon-says-javascript/
+                https://github.com/kellyk/javascript-simon
+        [2] https://medium.com/front-end-hacking/create-simon-game-in-javascript-d53b474a7416#.40erj3f56
+
+    -->
+
+</head>
+<body>
+
+    <div id="app">
+        <div class="row clearfix">
+            <div id="green" class="panel" data-val="0"></div>
+            <div id="red" class="panel" data-val="1"></div>
+        </div>
+        <div class="row clearfix">
+            <div id="yellow" class="panel" data-val="2"></div>
+            <div id="blue" class="panel" data-val="3"></div>
+        </div>
+        <div id="control-panel">
+            <h1>Simon</h1>
+            <div id="display">00</div>
+            <div id="buttons" class="clearfix">
+                <button id="start"><i class="fa fa-play"></i></button>
+                <button id="reset"><i class="fa fa-repeat"></i></button>
+                <button id="strict"><i class="fa fa-asterisk"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
